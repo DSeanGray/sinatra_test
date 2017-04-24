@@ -3,7 +3,7 @@ require 'shotgun'
 
 
 get '/' do
-  "Hello World test"
+  "Hello World testx2"
 end
 
 get '/secret' do
@@ -26,5 +26,5 @@ end
 get '/named-cat' do
   p params[:name]
   @random_name = params[:name]
-  erb(:index)
+  erb(:form)
 end
