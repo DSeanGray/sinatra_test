@@ -3,7 +3,7 @@ require 'shotgun'
 
 
 get '/' do
-  "Hello World"
+  "Hello World test"
 end
 
 get '/secret' do
@@ -19,5 +19,6 @@ get '/test2' do
 end
 
 get '/cat' do
+  @random_name = ["Amigo", "Oscar", "Viking"].sample
   erb(:index)
 end
