@@ -18,7 +18,13 @@ get '/test2' do
   "another get reqrf"
 end
 
-get '/cat' do
+get '/random-cat' do
   @random_name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params[:name]
+  @random_name = params[:name]
   erb(:index)
 end
