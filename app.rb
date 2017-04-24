@@ -25,6 +25,6 @@ end
 
 get '/named-cat' do
   p params[:name]
-  @random_name = params[:name]
+  @name = params[:name]
   erb(:form)
 end
